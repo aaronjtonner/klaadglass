@@ -108,38 +108,40 @@ const AllReviews = () => {
       <GridWrapper>
         <Bg />
         <Content className="spacing">
-          <FlexTitle>
-            <FlexStars>
-              <FaStar style={fontStyle} />
-              <FaStar style={fontStyle} />
-              <FaStar style={fontStyle} />
-              <FaStar style={fontStyle} />
-              <FaStar style={fontStyle} />
-            </FlexStars>
-            <h3 className="title bold caps italics center">5-star reviews</h3>
-            <FlexStars>
-              <FaStar style={fontStyle} />
-              <FaStar style={fontStyle} />
-              <FaStar style={fontStyle} />
-              <FaStar style={fontStyle} />
-              <FaStar style={fontStyle} />
-            </FlexStars>
-          </FlexTitle>
-          <GridAuto>
-            <Review
-              name="David Friese"
-              review="Klaad Glass really came through and helped me out in a bind.  Having moved from Alberta, I was stuck trying to get my window repaired in preparation for selling my condo.  Even with 3000 km's between me and Calgary, KLAAD was proactive, communicated within a timely manner, was able to coordinate access from me being a far, and their repair was top notch."
-            />
-            <Review
-              name="Michael Bruce"
-              review="I contracted KLAAD Glass to take care of a few jobs for me. Their lead time was excellent. And the jobs I sent them were definitely not easy. They completed them without issues. Coordinated with our customers directly and made it simple to give the details and move on to my many other busy tasks. I will definitely look to bring them back for more work in the future. They've got enough crew members to handle any jobs I have come up."
-            />
-            <Review
-              name="Stefanie Somers"
-              review="KLAAD is a very professional and reliable glass installer of ours. We use him for service repairs on windows/doors as well as sealed unit installs. I highly recommend their service to anyone who is in need of repairs and installs.
+          <Container>
+            <FlexTitle>
+              <FlexStars>
+                <FaStar style={fontStyle} />
+                <FaStar style={fontStyle} />
+                <FaStar style={fontStyle} />
+                <FaStar style={fontStyle} />
+                <FaStar style={fontStyle} />
+              </FlexStars>
+              <h3 className="title bold caps italics center">5-star reviews</h3>
+              <FlexStars>
+                <FaStar style={fontStyle} />
+                <FaStar style={fontStyle} />
+                <FaStar style={fontStyle} />
+                <FaStar style={fontStyle} />
+                <FaStar style={fontStyle} />
+              </FlexStars>
+            </FlexTitle>
+            <GridAuto>
+              <Review
+                name="David Friese"
+                review="Klaad Glass really came through and helped me out in a bind.  Having moved from Alberta, I was stuck trying to get my window repaired in preparation for selling my condo.  Even with 3000 km's between me and Calgary, KLAAD was proactive, communicated within a timely manner, was able to coordinate access from me being a far, and their repair was top notch."
+              />
+              <Review
+                name="Michael Bruce"
+                review="I contracted KLAAD Glass to take care of a few jobs for me. Their lead time was excellent. And the jobs I sent them were definitely not easy. They completed them without issues. Coordinated with our customers directly and made it simple to give the details and move on to my many other busy tasks. I will definitely look to bring them back for more work in the future. They've got enough crew members to handle any jobs I have come up."
+              />
+              <Review
+                name="Stefanie Somers"
+                review="KLAAD is a very professional and reliable glass installer of ours. We use him for service repairs on windows/doors as well as sealed unit installs. I highly recommend their service to anyone who is in need of repairs and installs.
             10/10 recommend"
-            />
-          </GridAuto>
+              />
+            </GridAuto>
+          </Container>
         </Content>
       </GridWrapper>
     </Section>

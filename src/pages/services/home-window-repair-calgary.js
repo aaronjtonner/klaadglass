@@ -11,9 +11,11 @@ import {
 } from "../../components/layoutComponents"
 import AllReviews from "../../components/reviews"
 import ServicePage from "../../components/servicePage"
+import FormContact from "../../components/forms/formContact"
 
 import BannerImg from "../../images/best-home-window-repair-services-calgary.svg"
 import MainImg from "../../images/home-window-repair-calgary.jpg"
+
 export default function HomeWindowRepair() {
   return (
     <Layout>
@@ -80,6 +82,7 @@ export default function HomeWindowRepair() {
         </Container>
       </Section>
       <AllReviews />
+      <FormContact title="get free estimate on your home window repair" />
     </Layout>
   )
 }

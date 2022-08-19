@@ -4,14 +4,21 @@ import styled from "styled-components"
 import { Section, Container, Flex, FlexMobileOpp } from "../layoutComponents"
 import { Label, Input, TextArea, Submit } from "./formItems"
 import Map from "../map"
+import { AnchorInline } from "../buttons"
 
-export default function FormContact() {
+export default function FormContact(props) {
   return (
     <Section>
       <Container>
-        <h3 className="title--bold center">
-          <span className="italics accent">easily get in touch with us</span>
-        </h3>
+        <div>
+          <h3 className="title--bold center">
+            <span className="italics accent">{props.title}</span>
+          </h3>
+          <p className="caps center">
+            Call <AnchorInline href="403-891-3172">403-891-3172</AnchorInline>{" "}
+            or send us a message below!
+          </p>
+        </div>
         <Flex className="spacing-lg">
           {/* flex item 1 */}
           <div>
