@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Window Contractor",
-    titleTemplate: "%s · KLAAD Glass Ltd.",
+    titleTemplate: "%s",
     description: "Klaad glass",
     url: "https://www.klaadglass.ca", // No trailing slash allowed!
     siteUrl: "https://www.klaadglass.ca",

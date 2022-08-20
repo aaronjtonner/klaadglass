@@ -3,10 +3,15 @@ import Banner from "../components/banners/bannerPrimary"
 import Layout from "../components/layout"
 import { Container, Section } from "../components/layoutComponents"
 import FormContact from "../components/forms/formContact"
+import SEO from "../components/seo"
 
 export default function Contact() {
   return (
     <Layout>
+      <SEO
+        title="Contact Us - Get Quote - KLAAD Glass Ltd."
+        description="Have a question? Need to request a service or get an estimate on your window & door installation or repair project? Use our online contact form or give us a call!"
+      />
       <Banner
         to1="/"
         link1="Home"

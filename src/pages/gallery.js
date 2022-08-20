@@ -9,10 +9,15 @@ import AllReviews from "../components/reviews"
 import CTA from "../components/CTA"
 import { StaticImage } from "gatsby-plugin-image"
 import { AnchorInline, ButtonPrimary } from "../components/buttons"
+import SEO from "../components/seo"
 
 export default function Gallery() {
   return (
     <Layout>
+      <SEO
+        title="Project Gallery - KLAAD Glass Ltd."
+        description="Have a look at our most recent residential and commercial window and door installations, repairs, and more!"
+      />
       <Banner
         to1="/"
         link1="Home"

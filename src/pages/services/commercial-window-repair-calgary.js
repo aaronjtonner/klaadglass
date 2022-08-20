@@ -24,6 +24,7 @@ import BannerImg from "../../images/24-hour-emergency-commercial-window-repair-c
 import MainImg from "../../images/commercial-window-repair-calgary.jpg"
 import styled from "styled-components"
 import CommercialFAQ from "../../components/faqs/commercialFAQ"
+import SEO from "../../components/seo"
 
 const ContentWrapper = styled.div`
   h2,
@@ -36,6 +37,10 @@ const ContentWrapper = styled.div`
 export default function CommercialWindowRepair() {
   return (
     <Layout>
+      <SEO
+        title="Commercial Window Repair Calgary - 24/7 Emergency Repairs"
+        description="Did a car drive through your window? Was your building vandalized? KLAAD Glass Ltd. offers 24/7 commercial window repair services in Calgary! 403-272-8932."
+      />
       <BannerSecondary
         to1="/"
         link1="home"

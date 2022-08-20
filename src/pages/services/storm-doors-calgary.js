@@ -24,6 +24,7 @@ import BannerImg from "../../images/storm-door-installation-and-repair-services-
 import MainImg from "../../images/storm-doors-calgary.jpg"
 import styled from "styled-components"
 import StormdoorFAQ from "../../components/faqs/stormdoorFAQ"
+import SEO from "../../components/seo"
 
 const ContentWrapper = styled.div`
   h2,
@@ -36,6 +37,10 @@ const ContentWrapper = styled.div`
 export default function StormDoorsCalgary() {
   return (
     <Layout>
+      <SEO
+        title="Storm Doors Calgary Installation Services - KLAAD Glass Ltd."
+        description="Calgary's best storm doors installation & repair services! KLAAD Glass Ltd. uses top-quality storm doors for your installation and repair needs! 403-272-8932"
+      />
       <BannerSecondary
         to1="/"
         link1="home"

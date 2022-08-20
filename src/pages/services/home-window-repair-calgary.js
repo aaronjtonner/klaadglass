@@ -24,6 +24,7 @@ import BannerImg from "../../images/best-home-window-repair-services-calgary.svg
 import MainImg from "../../images/home-window-repair-calgary.jpg"
 import styled from "styled-components"
 import ResidentialFAQ from "../../components/faqs/residentialFAQ"
+import SEO from "../../components/seo"
 
 const ContentWrapper = styled.div`
   h2,
@@ -36,6 +37,10 @@ const ContentWrapper = styled.div`
 export default function HomeWindowRepair() {
   return (
     <Layout>
+      <SEO
+        title="Best Home Window Repair Services Calgary - KLAAD Glass"
+        description="KLAAD Glass Ltd. does the big residential window repair jobs no one else wants to do!  Large home & high-rise window repair Calgary! Call 403-272-8932."
+      />
       <BannerSecondary
         to1="/"
         link1="home"
