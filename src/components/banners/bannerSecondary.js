@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 `
 
 const Bg = styled.div`
-  background: url("../../images/banner-primary.jpg"), rgba(0, 0, 0, 0.7);
+  background: url("../../images/banner-primary.jpg"), rgba(0, 0, 0, 0.1);
   background-blend-mode: overlay;
   background-position: center;
   background-size: cover;

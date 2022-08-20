@@ -23,6 +23,7 @@ import FormContact from "../../components/forms/formContact"
 import BannerImg from "../../images/best-home-window-repair-services-calgary.svg"
 import MainImg from "../../images/home-window-repair-calgary.jpg"
 import styled from "styled-components"
+import ResidentialFAQ from "../../components/faqs/residentialFAQ"
 
 const ContentWrapper = styled.div`
   h2,
@@ -54,6 +55,7 @@ export default function HomeWindowRepair() {
         mainImg={MainImg}
         mainAlt="home window repair calgary"
       />
+
       <Section>
         <Container>
           <div className="center spacing">
@@ -273,11 +275,12 @@ export default function HomeWindowRepair() {
           </Container>
         </ContentWrapper>
       </Section>
+      <ResidentialFAQ />
       <CTA
         subtitle="need a new home window?"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra nisl, eget et sit justo, maecenas elit."
       />
-      <Section>
+      {/* <Section>
         <Container>
           <h2 className="caps title bold accent">
             3 easy steps to a new window for your home
@@ -324,8 +327,7 @@ export default function HomeWindowRepair() {
             </div>
           </GridThree>
         </Container>
-      </Section>
-
+      </Section> */}
       <FormContact title="get free estimate on your home window repair" />
     </Layout>
   )

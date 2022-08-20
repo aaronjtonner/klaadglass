@@ -259,18 +259,7 @@ export default function Footer() {
                   </StyledLink>
                 </li>
                 <li>
-                  <StyledLink to="/workshops">workshops</StyledLink>
-                </li>
-                <li>
-                  <StyledLink to="/faqs">faqs</StyledLink>
-                </li>
-                <li>
                   <StyledLink to="/contact">contact</StyledLink>
-                </li>
-                <li>
-                  <StyledLink to="/book-an-appointment">
-                    Book Appointment
-                  </StyledLink>
                 </li>
               </ul>
             </FlexItem>

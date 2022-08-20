@@ -27,7 +27,11 @@ export default function CTA(props) {
                 <p className="italics caps">{props.subtitle}</p>
                 <h3 className="title bold">book your glass service today!</h3>
               </div>
-              <p>{props.description}</p>
+              <p>
+                By giving us a call, or writing us a message using our online
+                contact form, our experienced team can provide you with an
+                estimate on your next window or door project!
+              </p>
               <Actions>
                 <ButtonPrimary to="/contact">book online</ButtonPrimary>
                 <AnchorInline className="bold italics" href="tel: 403-891-3172">
