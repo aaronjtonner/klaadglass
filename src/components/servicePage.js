@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { ButtonInline } from "./buttons"
+import { AnchorInline, ButtonInline } from "./buttons"
 import ServiceForm from "./forms/serviceForm"
 import { Container, Section } from "./layoutComponents"
 
@@ -18,8 +18,10 @@ const Wrapper = styled.div`
 const Aside = styled.div`
   grid-column: 1 / span 1;
 
-  @media screen and (max-width: 48em) {
-    display: none;
+  .service-form {
+    @media screen and (max-width: 48em) {
+      display: none;
+    }
   }
 `
 
@@ -56,7 +58,7 @@ const Img = styled.div`
 
 const ServiceAreas = styled.div`
   padding: 2em;
-  border: 1px solid var(--clr-dark);
+  border: 1px solid var(--txt-dark-secondary);
   border-radius: var(--br);
 `
 
@@ -67,7 +69,9 @@ export default function ServicePage(props) {
         <Wrapper>
           <Aside className="spacing">
             <Navigation className="spacing">
-              <h2 className="caps accent heading">glass services</h2>
+              <h3 className="caps accent title bold">
+                glass <br /> services
+              </h3>
               <ul>
                 <li>
                   <ButtonInline to="/services/home-window-repair-calgary">
@@ -89,11 +93,13 @@ export default function ServicePage(props) {
                 </li>
               </ul>
             </Navigation>
-            <ServiceForm />
+            <div className="service-form">
+              <ServiceForm />
+            </div>
           </Aside>
           <Content className="spacing">
             <div>
-              <h1 className="title dark ">{props.title}</h1>
+              <h1 className="title dark bold italics">{props.title}</h1>
               <p className="caps dark bold">{props.subtitle}</p>
             </div>
             <div>
@@ -103,14 +109,28 @@ export default function ServicePage(props) {
               <img src={props.mainImg} alt={props.mainAlt} />
             </Img>
             <ServiceAreas>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae amet iure incidunt ullam quam molestias, minima
-                voluptatum adipisci vel, mollitia iusto quo id! Perspiciatis,
-                tempore! Harum iure commodi itaque nesciunt, veritatis
-                dignissimos doloribus nisi? Voluptatum nulla magnam dolore enim
-                molestias similique officia deleniti, illo amet error sit
-                quaerat labore qui.
+              <p className="center bold">
+                <ButtonInline to=""></ButtonInline>
+                We provide{" "}
+                <ButtonInline to="/services/home-window-repair-calgary">
+                  residential glass installation & repair
+                </ButtonInline>
+                ,{" "}
+                <ButtonInline to="/services/commercial-window-repair-calgary">
+                  commercial window repair
+                </ButtonInline>
+                ,{" "}
+                <ButtonInline to="/services/storm-doors-calgary">
+                  new storm door installations
+                </ButtonInline>
+                , and more to Calgary, Airdrie, Okotoks, Cochrane, Chestermere,
+                Foothills, Strathmore, and more surrounding areas and throughout
+                Alberta! Call{" "}
+                <AnchorInline href="tel: 403-891-3172">
+                  403-891-3172
+                </AnchorInline>{" "}
+                to book a service, or use our{" "}
+                <ButtonInline to="/contact">online contact form.</ButtonInline>
               </p>
             </ServiceAreas>
           </Content>

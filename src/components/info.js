@@ -1,10 +1,10 @@
 export const Info = {
-  name: "Pacha Mamma Massage",
-  hours: "9:00 AM - 6:00 PM Wednesday to Friday",
+  name: "KLAAD Glass Ltd.",
+  hours: "9:00 AM - 5:00 PM Monday to Saturday",
 
-  tel1: "403-805-8256",
+  tel1: "403-891-3172",
   mail1: "kathryn@bookwithkathryn.com",
 
-  street1: "112196 266 Ave W, T1S 3B4",
-  city1: "Foothills, AB",
+  street1: "Calgary",
+  city1: "Alberta",
 }

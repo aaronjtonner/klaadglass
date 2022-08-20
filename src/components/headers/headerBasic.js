@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { Container } from "../layoutComponents"
 import { IoMdArrowDropdown } from "react-icons/io"
 
-import Logo from "../../images/logo.svg"
+import Logo from "../../images/logo-light.jpg"
 
 const device = {
   sm: "18em",
@@ -12,7 +12,7 @@ const device = {
 }
 
 const Header = styled.header`
-  background: rgba(255, 255, 255);
+  background: var(--clr-dark);
   border-bottom: 1px solid var(--clr-accent);
   top: 0;
   left: 0;
@@ -44,7 +44,7 @@ const NavPhone = styled.a`
   text-transform: uppercase;
   font-size: var(--fs-sm);
   font-weight: var(--fw-button);
-  color: var(--txt-dark);
+  color: var(--txt-light);
   letter-spacing: 0.1em;
   transition: all 0.25s linear;
 
@@ -72,7 +72,7 @@ const Headerbottom = styled.div`
 
 const LogoContainer = styled.div`
   img {
-    height: 50px;
+    height: 100px;
     transition: 0.4s;
 
     &[data-active="true"] {
@@ -109,7 +109,7 @@ const NavList = styled.ul`
     right: 0;
     flex-direction: column;
     width: 100%;
-    background: var(--clr-light);
+    background: var(--clr-dark);
     box-shadow: var(--shadow-bottom);
     border-radius: var(--br);
     border-top: 1px solid var(--txt-dark-secondary);
@@ -179,7 +179,7 @@ const StyledLink = styled(props => <Link {...props} />)`
   text-transform: uppercase;
   font-size: var(--fs-sm);
   font-weight: var(--fw-button);
-  color: var(--txt-dark);
+  color: var(--txt-light);
   letter-spacing: 0.1em;
   transition: all 0.25s linear;
 
@@ -243,16 +243,16 @@ export default function HeaderBasic() {
           <Headertop>
             <LogoContainer>
               <Link to="/">
-                <img src={Logo} alt="" />
+                <img src={Logo} alt="klaad glass logo" />
               </Link>
             </LogoContainer>
             <ul>
               <li>
-                <NavPhone href="tel: 403-805-8256">(403) 805-8256</NavPhone>
+                <NavPhone href="tel: 403-891-3172">(403) 891-3172</NavPhone>
               </li>
               <li>
-                <GetQuote to="/book-an-appointment">
-                  <span>book now</span>
+                <GetQuote to="/contact">
+                  <span>book service</span>
                 </GetQuote>
               </li>
             </ul>
@@ -292,10 +292,7 @@ export default function HeaderBasic() {
                   </ul>
                 </Dropdown>
                 <li>
-                  <StyledLink to="/workshops">workshops</StyledLink>
-                </li>
-                <li>
-                  <StyledLink to="/faqs">faqs</StyledLink>
+                  <StyledLink to="/gallery">gallery</StyledLink>
                 </li>
                 <li>
                   <StyledLink to="/contact">contact</StyledLink>

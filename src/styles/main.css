@@ -28,12 +28,12 @@
   --txt-dark-secondary: #777;
   --txt-light-secondary: rgb(218, 218, 218);
 
-  --clr-dark: #000000;
+  --clr-dark: #010101;
   --clr-light: #fff;
   --clr-light-secondary: #F0F0F0;
-  --clr-accent: #91598a;
+  --clr-accent: #EE1A25;
   --clr-accent-lighter: #aa83a5;
-  --clr-accent-darker: rgb(131, 67, 122);
+  --clr-accent-darker: #DB1B25;
   --clr-overlay: rgba(0, 0, 0, 0.6);
   --clr-overlay-darker: rgba(0, 0, 0, 0.8);
 

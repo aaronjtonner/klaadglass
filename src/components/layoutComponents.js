@@ -15,7 +15,7 @@ export const Section = styled.section`
 export const Container = styled.div`
   width: 85%;
   margin: 0 auto;
-  max-width: 65rem;
+  max-width: 95rem;
 `
 
 export const PageTitle = styled.div`
@@ -91,6 +91,7 @@ export const Flex = styled.div`
 
 export const FlexMobileOpp = styled.div`
   display: flex;
+  align-items: center;
 
   @media screen and (max-width: ${device.md}) {
     flex-direction: column-reverse;

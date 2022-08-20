@@ -15,7 +15,9 @@ const Wrapper = styled.div`
 export default function ServiceForm() {
   return (
     <Wrapper>
-      <h3 className="caps heading accent">request service</h3>
+      <h3 className="caps title accent bold">
+        request <br /> service
+      </h3>
       <div>
         <form
           name="contact"

@@ -11,17 +11,19 @@ const GridWrapper = styled.div`
 `
 
 const Content = styled.div`
+  h3 {
+    color: var(--txt-light);
+  }
   grid-row: 2 / -1;
   grid-column: 1 / -1;
   z-index: 2;
 `
 
 const Bg = styled.div`
-  background: red;
+  background: var(--clr-dark);
   grid-row: 1 / span 2;
   grid-column: 1 / -1;
   z-index: 1;
-  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
 `
 
 const Wrapper = styled.div`
@@ -49,14 +51,8 @@ const Flex = styled.div`
   }
 `
 
-const Date = styled.p`
-  font-size: 0.75rem;
-  margin-top: 0;
-  line-height: 1;
-`
-
 const fontStyle = {
-  color: "gold",
+  color: "var(--clr-accent)",
 }
 
 const FlexTitle = styled.div`
@@ -83,7 +79,7 @@ const Review = props => {
         <FaStar style={fontStyle} />
         <FaStar style={fontStyle} />
       </FlexStars>
-      <p className="italics">"{props.review}"</p>
+      <p className="italics bold">"{props.review}"</p>
       <a
         href="https://www.google.com/maps/place/KLAAD+Glass+Ltd./@51.0276233,-114.087835,10z/data=!4m7!3m6!1s0x0:0x29f27be051105846!8m2!3d51.0276233!4d-114.087835!9m1!1b1"
         target="_blank"
@@ -94,8 +90,7 @@ const Review = props => {
       <Flex>
         <FcGoogle size={35} />
         <div>
-          <p className="bold caps">{props.name}</p>
-          <Date className="caps">{props.date}</Date>
+          <p className="caps">{props.name}</p>
         </div>
       </Flex>
     </Wrapper>
@@ -108,7 +103,7 @@ const AllReviews = () => {
       <GridWrapper>
         <Bg />
         <Content className="spacing">
-          <Container>
+          <Container className="spacing">
             <FlexTitle>
               <FlexStars>
                 <FaStar style={fontStyle} />

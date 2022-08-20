@@ -114,8 +114,8 @@ export default function HeroBasic() {
           </Text>
           <Img>
             <StaticImage
-              src="../../images/glass-contractor-calgary.svg"
-              alt="glass contractor calgary"
+              src="../../images/best-glass-contractor-calgary.svg"
+              alt="best glass contractor calgary"
             />
           </Img>
         </Flex>

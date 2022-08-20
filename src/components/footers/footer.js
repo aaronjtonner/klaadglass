@@ -6,8 +6,8 @@ import { Info } from "../info"
 import { Container } from "../layoutComponents"
 import { ButtonInline } from "../buttons"
 
-import Logo from "../../images/logo.svg"
-import AaronTonnerWebSolutionsLogo from "../../images/aaron-tonner-web-solutions-logo.svg"
+import Logo from "../../images/logo-light.jpg"
+import AaronTonnerWebSolutionsLogo from "../../images/aaron-tonner-web-solutions-logo-white-white.svg"
 import Facebook from "../../images/socials/facebook.svg"
 import Instagram from "../../images/socials/instagram.svg"
 import Twitter from "../../images/socials/twitter.svg"
@@ -22,8 +22,8 @@ const device = {
 
 const FooterWrapper = styled.footer`
   padding: 4em 0 1em 0;
-  background: var(--clr-light-secondary);
-  color: var(--txt-dark);
+  background: var(--clr-dark);
+  color: var(--txt-light);
 `
 
 export const Flex = styled.div`
@@ -104,7 +104,7 @@ const FlexItem = styled.div`
 
     li {
       a {
-        color: var(--txt-dark);
+        color: var(--txt-light);
         font-weight: var(--fw-500);
       }
     }
@@ -143,7 +143,7 @@ const Copyright = styled.div`
     li {
       a {
         text-transform: capitalize;
-        color: var(--txt-dark);
+        color: var(--txt-light);
         font-weight: var(--fw-500);
       }
     }
@@ -152,7 +152,7 @@ const Copyright = styled.div`
 
 const StyledLink = styled(props => <Link {...props} />)`
   text-transform: capitalize;
-  color: var(--txt-dark);
+  color: var(--txt-light);
   font-weight: var(--fw-400);
 
   &:hover,
@@ -163,7 +163,7 @@ const StyledLink = styled(props => <Link {...props} />)`
 `
 
 const Author = styled.div`
-  color: var(--txt-dark-secondary);
+  color: var(--txt-light-secondary);
 
   div {
     display: flex;
@@ -175,11 +175,11 @@ const Author = styled.div`
 
   a {
     display: inline;
-    color: var(--txt-dark-secondary);
+    color: var(--txt-light-secondary);
   }
 
   img {
-    width: 250px;
+    width: 150px;
   }
 `
 
@@ -198,12 +198,12 @@ export default function Footer() {
               <ul>
                 <li>
                   <FlexContact>
-                    <a href="tel: 403-874-3131">{Info.tel1}</a>
+                    <a href="tel: 403-891-3172">403-891-3172</a>
                   </FlexContact>
                 </li>
                 <li>
                   <FlexContact>
-                    <a href="mailto: info@3drtinc.com">{Info.mail1}</a>
+                    <a href="mailto: info@klaadglass.ca">info@klaadglass.ca</a>
                   </FlexContact>
                 </li>
                 <li>
@@ -220,21 +220,12 @@ export default function Footer() {
               <Socials>
                 <div>
                   <a
-                    target="black"
-                    href="https://www.facebook.com/pachamammamassage/?ref=page_internal/"
+                    target="_blank"
+                    href="https://www.facebook.com/KLAADGLASS/"
                   >
                     <img
                       src={Facebook}
                       alt="3'D revolution technologies - 3d printing services in calgary"
-                    />
-                  </a>
-                  <a
-                    target="blank"
-                    href="https://ca.linkedin.com/in/pachamamma"
-                  >
-                    <img
-                      src={Linkedin}
-                      alt="3'D revolution technologies - 3d printing company calgary"
                     />
                   </a>
                 </div>
@@ -250,21 +241,21 @@ export default function Footer() {
                   <StyledLink to="/about">about</StyledLink>
                 </li>
                 <li>
-                  <StyledLink to="/our-treatments">treatments</StyledLink>
+                  <StyledLink to="/services">services</StyledLink>
                 </li>
                 <li>
-                  <StyledLink to="/treatments/massage-therapy-calgary">
-                    massage & sound therapy
+                  <StyledLink to="/services/home-window-repair-calgary">
+                    home window repair
                   </StyledLink>
                 </li>
                 <li>
-                  <StyledLink to="/treatments/craniosacral-massage-calgary">
-                    craniosacral therapy
+                  <StyledLink to="/services/commercial-window-repair-calgary">
+                    commercial window repair
                   </StyledLink>
                 </li>
                 <li>
-                  <StyledLink to="/treatments/reiki-calgary">
-                    reiki & distance healing
+                  <StyledLink to="/services/storm-doors-calgary">
+                    storm doors
                   </StyledLink>
                 </li>
                 <li>
@@ -286,14 +277,24 @@ export default function Footer() {
             <FlexItem className="spacing">
               <p className="heading">about us</p>
               <p>
-                We are registered massage therapists based in Calgary, located
-                at the Misty Ridge Retreat B&B. We understand that regular
-                massage helps the body to relax and improve circulation
-                resulting in the body going through a natural healing process.
-                We specialize in combining therapeutic relaxation massage with
-                sound therapy, craniosacral massage therapy, and distance
-                healing & reiki. You can easily book your appointment on our
-                online calander here.
+                <ButtonInline to=""></ButtonInline>
+                <ButtonInline to="/">KLAAD Glass Ltd.</ButtonInline> is a
+                reliable window & door repair contractor servicing Calgary, AB
+                and surrounding areas. With extensive
+                <ButtonInline to="/services/home-window-repair-calgary">
+                  residential
+                </ButtonInline>{" "}
+                &{" "}
+                <ButtonInline to="/services/commercial-window-repair-calgary">
+                  commercial
+                </ButtonInline>{" "}
+                experience, we can handle your window installation & glass
+                replacement needs,{" "}
+                <ButtonInline to="/services/storm-doors-calgary">
+                  storm door installation
+                </ButtonInline>
+                & repairs, shower systems, commercial mirrors, and more! Call us
+                today to request a free estimate!
               </p>
             </FlexItem>
           </Flex>
@@ -304,17 +305,14 @@ export default function Footer() {
               <li>{Info.name}</li>
               <li>All Rights Reserved</li>
               <li>
-                <a
-                  target="blank"
-                  href="https://www.bookwithkathryn.com/terms-of-use"
-                >
+                <a target="blank" href="https://www.klaadglass.ca/terms-of-use">
                   Terms of use
                 </a>
               </li>
               <li>
                 <a
                   target="blank"
-                  href="https://www.bookwithkathryn.com/privacy-policy"
+                  href="https://www.klaadglass.ca/privacy-policy"
                 >
                   Privacy Policy
                 </a>
@@ -327,8 +325,11 @@ export default function Footer() {
           <Container>
             <div>
               <p>website by: </p>
-              <a target="blank" href="https://www.aarontonner.com">
-                <img src={AaronTonnerWebSolutionsLogo} alt="" />
+              <a target="_blank" href="https://www.aarontonner.com">
+                <img
+                  src={AaronTonnerWebSolutionsLogo}
+                  alt="calgary web designer logo"
+                />
               </a>
             </div>
           </Container>

@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Actions, Container, Flex } from "../layoutComponents"
-import { ButtonPrimary } from "../buttons"
+import { ButtonPrimary, AnchorInline } from "../buttons"
 import Breadcrumb3Links from "../breadcrumbs/breadcrumb3links"
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 `
 
 const Bg = styled.div`
-  background: url("../../images/hero.jpg"), rgba(0, 0, 0, 0.8);
+  background: url("../../images/banner-primary.jpg"), rgba(0, 0, 0, 0.7);
   background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
@@ -74,7 +74,13 @@ export default function BannerSecondary(props) {
           <h2 className="title bold">{props.title}</h2>
         </div>
         <p className="body--small">{props.description}</p>
-        <ButtonPrimary to="/contact">get free estimate</ButtonPrimary>
+        <Actions>
+          <ButtonPrimary to="/contact">get free estimate</ButtonPrimary>
+          <AnchorInline className="bold italics" href="tel: 403-891-3172">
+            <span className="dark">Or Call Us:</span> <br />
+            403-891-3172
+          </AnchorInline>
+        </Actions>
       </Text>
       <Img>
         <img src={props.img} alt={props.alt} />

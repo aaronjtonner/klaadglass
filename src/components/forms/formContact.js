@@ -6,13 +6,19 @@ import { Label, Input, TextArea, Submit } from "./formItems"
 import Map from "../map"
 import { AnchorInline } from "../buttons"
 
+const FormWrapper = styled.div`
+  // background: var(--clr-dark);
+  // color: var(--txt-light);
+  // padding: 2em;
+`
+
 export default function FormContact(props) {
   return (
     <Section>
       <Container>
         <div>
           <h3 className="title--bold center">
-            <span className="italics accent">{props.title}</span>
+            <span className="italics">{props.title}</span>
           </h3>
           <p className="caps center">
             Call <AnchorInline href="403-891-3172">403-891-3172</AnchorInline>{" "}
@@ -21,7 +27,7 @@ export default function FormContact(props) {
         </div>
         <Flex className="spacing-lg">
           {/* flex item 1 */}
-          <div>
+          <FormWrapper>
             <form
               name="contact"
               className="spacing"
@@ -92,7 +98,7 @@ export default function FormContact(props) {
               </div>
               <Submit type="submit" id="submit" value="send" />
             </form>
-          </div>
+          </FormWrapper>
           {/* flex item 2 */}
           <Map className="stretch" />
         </Flex>

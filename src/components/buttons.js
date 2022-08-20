@@ -142,7 +142,7 @@ export const ButtonUnderline = styled(props => <Link {...props} />)`
 export const ButtonInline = styled(props => <Link {...props} />)`
   cursor: pointer;
   display: inline-block;
-  color: var(--clr-dark);
+  color: var(--clr-accent);
   text-decoration: none;
 `
 
@@ -243,4 +243,13 @@ export const AnchorInline = styled.a`
   cursor: pointer;
   display: inline;
   color: var(--clr-accent);
+  text-decoration: none;
+
+  span.light {
+    color: var(--txt-light);
+  }
+
+  span.dark {
+    color: var(--txt-dark);
+  }
 `
